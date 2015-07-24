@@ -2,8 +2,14 @@
 <html>
 <head>
   <title>RailsElmIntegration</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+
+  <script type="text/javascript" src="elm.js"></script>
+  <%= javascript_include_tag 'application' %>
+
+  <!-- Comment out the below line to disable elm-reactor support. -->
+  <script type="text/javascript" src="http://0.0.0.0:8000/_reactor/debug.js"></script>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
