@@ -24,8 +24,26 @@ All Elm code lives in the 'client' folder.
 
 ## Current issues:
 
-- Elm tries to render content outside the given outlet
-- I need to refresh app in reactor, then refresh the app in rails in order to pick up changes
+__Elm tries to connect to the wrong socket ws://localhost:3000/socket?file=/client/One.elm.__
+
+Reactor thinks the socket is running in 3000, but this is the Rails app
+
+__Elm render content outside the given outlet__
+
+e.g. <div><%= yield %></div>
+Elm renders the content outside of the div
+
+__An elm app is only available when viewer in reactor first__
+
+Go to http://localhost:3000/one, not available
+
+Then go to http://0.0.0.0:8000/client/One.elm
+Then to http://localhost:3000/one, it is available
+
+__I need to refresh app in reactor, then refresh the app in rails in order to pick up changes__
+
+Just making a change in .elm source and refreshing http://localhost:3000/one won't work
+
 
 ## TODO:
 
