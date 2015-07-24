@@ -27,3 +27,9 @@ All Elm code lives in the 'client' folder.
 To figure this out
 Elm needs to put the relevant files inside the assets pipeline folders
 
+https://gist.github.com/rtfeldman/db7b121100b6c6ff435b
+
+## To do:
+
+- Elm Reactor dumps `elm.js` on the root of my project, I need to copy this into the rails assets pipeline, it would be nice to have reactor put this file there automatically.
+

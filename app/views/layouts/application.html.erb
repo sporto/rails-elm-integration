@@ -4,8 +4,9 @@
   <title>RailsElmIntegration</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
 
-  <script type="text/javascript" src="elm.js"></script>
   <%= javascript_include_tag 'application' %>
+
+  <script type="text/javascript" src="http://0.0.0.0:8000/elm.js"></script>
 
   <!-- Comment out the below line to disable elm-reactor support. -->
   <script type="text/javascript" src="http://0.0.0.0:8000/_reactor/debug.js"></script>
@@ -15,12 +16,15 @@
 <body>
 
 <div class="container">
-	<nav>
-		<%= link_to "One", one_path %>
-		<%= link_to "Two", two_path %>
+	<nav class="mxn1">
+		<%= link_to "One", one_path, class: "btn button-narrow" %>
+		<%= link_to "Two", two_path, class: "btn button-narrow" %>
 	</nav>
 
-	<%= yield %>
+	<div class="px3 border">
+		<%= yield %>
+	</div>
+
 </div>
 
 </body>
