@@ -1,4 +1,6 @@
-import Html exposing (div, button, text)
+module Two where
+
+import Html exposing (div, button, text, h1)
 import Html.Events exposing (onClick)
 import StartApp
 
@@ -9,7 +11,9 @@ model = 0
 
 view address model =
   div []
-    [ button [ onClick address Decrement ] [ text "-" ]
+    [
+      h1 [] [ text "Two" ],
+      button [ onClick address Decrement ] [ text "-" ]
     , div [] [ text (toString model) ]
     , button [ onClick address Increment ] [ text "+" ]
     ]

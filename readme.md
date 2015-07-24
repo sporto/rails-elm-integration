@@ -24,7 +24,8 @@ All Elm code lives in the 'client' folder.
 
 ## Current issues:
 
-- Not really working, Elm just showing `TypeError: elmModule is undefined`
+- Elm tries to render content outside the given outlet
+- I need to refresh app in reactor, then refresh the app in rails in order to pick up changes
 
 ## TODO:
 
