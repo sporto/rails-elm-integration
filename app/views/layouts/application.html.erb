@@ -8,7 +8,14 @@
 </head>
 <body>
 
-<%= yield %>
+<div class="container">
+	<nav>
+		<%= link_to "One", one_path %>
+		<%= link_to "Two", two_path %>
+	</nav>
+
+	<%= yield %>
+</div>
 
 </body>
 </html>
