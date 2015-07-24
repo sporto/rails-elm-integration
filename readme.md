@@ -22,14 +22,18 @@ All Elm code lives in the 'client' folder.
 - start rails: `puma`
 - start elm: 'elm-reactor'
 
+## Current issues:
+
+- Not really working, Elm just showing `TypeError: elmModule is undefined`
+
+## TODO:
+
+- I am just requiring http://0.0.0.0:8000/ in my views, this needs to be diff for other environments
+
 ## Deployment
 
 To figure this out
 Elm needs to put the relevant files inside the assets pipeline folders
 
 https://gist.github.com/rtfeldman/db7b121100b6c6ff435b
-
-## To do:
-
-- Elm Reactor dumps `elm.js` on the root of my project, I need to copy this into the rails assets pipeline, it would be nice to have reactor put this file there automatically.
 
