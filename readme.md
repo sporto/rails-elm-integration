@@ -38,10 +38,14 @@ The code is loaded via Rails views e.g. /app/views/ones/show.html.erb
 e.g.  ws://localhost:3000/socket?file=/client/One.elm
 Reactor thinks the socket is running in 3000, but this is the Rails app
 
+https://github.com/elm-lang/elm-reactor/issues/133
+
 #### Elm render content outside the given outlet
 
 e.g. <div><%= yield %></div>
 Elm renders the content outside of the div
+
+https://github.com/elm-lang/elm-reactor/issues/134
 
 ### An elm app is only available when viewer in reactor first
 
