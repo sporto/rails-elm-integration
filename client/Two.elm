@@ -22,5 +22,5 @@ type Action = Increment | Decrement
 
 update action model =
   case action of
-    Increment -> model + 1
+    Increment -> model + 3
     Decrement -> model - 1

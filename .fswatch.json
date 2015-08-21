@@ -1,0 +1,17 @@
+{
+    "paths": [
+        "./client"
+    ],
+    "depth": 2,
+    "exclude": [],
+    "include": [
+        "\\.(elm|go|py|php|java|cpp|h|rb)$"
+    ],
+    "command": "make two",
+    "env": {
+        "POWERD_BY": "github.com/codeskyblue/fswatch"
+    },
+    "autorestart": false,
+    "restart-interval": 0,
+    "kill-signal": "KILL"
+}

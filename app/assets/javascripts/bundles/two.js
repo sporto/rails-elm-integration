@@ -12170,7 +12170,7 @@ Elm.Two.make = function (_elm) {
          {case "Decrement":
             return model - 1;
             case "Increment":
-            return model + 1;}
+            return model + 3;}
          _U.badCase($moduleName,
          "between lines 24 and 26");
       }();
