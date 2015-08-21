@@ -12,7 +12,7 @@ var commonsPlugin     = new webpack.optimize.CommonsChunkPlugin({
 
 module.exports = {
   entry: {
-    'three':                './client/Three.elm',
+    'three':                './client/three.js',
   },
   output: {
       path: './app/assets/javascripts/bundles/',
@@ -25,11 +25,11 @@ module.exports = {
   },
   module: {
     preLoaders: [
-      {
-        test: /\.(js|jsx)$/,
-        loader: "eslint-loader",
-        exclude: /node_modules/
-      }
+      // {
+      //   test: /\.(js|jsx)$/,
+      //   loader: "eslint-loader",
+      //   exclude: /node_modules/
+      // }
     ],
     loaders: [
       {

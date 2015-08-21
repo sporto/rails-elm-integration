@@ -44,6 +44,18 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+
+	var Elm = __webpack_require__(1);
+
+	window.Three = function (node) {
+		Elm.embed(Elm.Three, node);
+	};
+
+/***/ },
+/* 1 */
+/***/ function(module, exports, __webpack_require__) {
+
 	var require;var require;var Elm = Elm || { Native: {} };
 	Elm.Array = Elm.Array || {};
 	Elm.Array.make = function (_elm) {
