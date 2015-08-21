@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
-  resource :one, only: [:show]
-  resource :two, only: [:show]
-  resource :three, only: [:show]
-  root to: "ones#show"
+  resources :pages, only: [:show]
+  root to: "pages#index"
+
 end

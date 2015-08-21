@@ -12,7 +12,7 @@ var commonsPlugin     = new webpack.optimize.CommonsChunkPlugin({
 
 module.exports = {
   entry: {
-    'three':                './client/three.js',
+    'entryOne':                './client/entryOne.js',
   },
   output: {
       path: './app/assets/javascripts/bundles/',
