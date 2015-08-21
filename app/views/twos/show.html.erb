@@ -1,8 +1,5 @@
 <div id="app"></div>
+<script src="/bundles/two.js"></script>
 <script type="text/javascript">
-	// Attempt to load One from root
-  var app = Elm.fullscreenDebug('Two', '/client/Two.elm');
-  // Elm.embed('Two', document.querySelector("#app")) 
-  // Uncomment this line and comment out the above to disable elm-reactor support.
-  // var app = Elm.fullscreen(Elm.Wizardry, {});
+  Elm.embed(Elm.Two, document.querySelector("#app")) 
 </script>
