@@ -1,4 +1,4 @@
-module Two where
+module Three where
 
 import Html exposing (div, button, text, h1)
 import Html.Events exposing (onClick)
@@ -12,7 +12,7 @@ model = 0
 view address model =
   div []
     [
-      h1 [] [ text "Two" ],
+      h1 [] [ text "Three" ],
       button [ onClick address Decrement ] [ text "-" ]
     , div [] [ text (toString model) ]
     , button [ onClick address Increment ] [ text "+" ]

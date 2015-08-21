@@ -16,3 +16,4 @@
 !/log/.keep
 /tmp
 elm-stuff
+node_modules
