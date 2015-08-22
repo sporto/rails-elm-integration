@@ -1,0 +1,14 @@
+<h2>Using elm-make</h2>
+<p>This pages embed the elm-make output directly</p>
+
+<div id="app1"></div>
+<%= javascript_include_tag('make-one') %>
+<script type="text/javascript">
+  Elm.embed(Elm.One, document.querySelector("#app1")) 
+</script>
+
+<div id="app2"></div>
+<%= javascript_include_tag('make-two') %>
+<script type="text/javascript">
+  Elm.embed(Elm.Two, document.querySelector("#app2")) 
+</script>
