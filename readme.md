@@ -2,7 +2,7 @@
 
 This is an attempt to integrate Elm Reactor into a nice workflow when working with a framework like Rails
 
-This Rails app has to sections:
+This Rails app has two sections:
 
 /one
 
